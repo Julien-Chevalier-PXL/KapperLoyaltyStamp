@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KapperStamp</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="manifest" href="../manifest.json"/>
+    <!-- Bootstrap -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB1I2hoIyo09qb6Ngl--q71MigSeOMQxl8",
+            authDomain: "loyaltystamp-1aa3f.firebaseapp.com",
+            databaseURL: "https://loyaltystamp-1aa3f.firebaseio.com",
+            projectId: "loyaltystamp-1aa3f",
+            storageBucket: "loyaltystamp-1aa3f.appspot.com",
+            messagingSenderId: "786103369458"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+
+<body>
+
+
+<!-- region navbar-->
+<?php require '../PartialViews/navbar.html'; ?>
+<script>
+    $(document).ready(function () {
+        $("#Homeli").addClass("active");
+    });
+</script>
+<!-- endregion navbar-->
+
+<div class="container">
+    <div class="col-md-12 jumbotron alert-success">
+        <h1>Knip & scheer beurt!</h1>
+        <p>Behaal je L rijbewijs van de 1ste keer !</p>
+    </div>
+    <div class="col-md-12 jumbotron alert-info">
+        <h2>Welkom</h2>
+        <p>MWelkom bij kappper jos, omdat jij zo'n trouwe klant, en wij je graag als trouwe klant houden. Geven wij jou de kans om je bezoek te sparen en maak je kans
+            op een gratis knipbeurt. Wij zien je graag de volgende keer voor een fris knipbeur en een leuke babbel</p>
+        <p>
+            Bij ieder kapper beurt, kan je je code inscannen en zo ben je stap dichter bij een gratis knip bij je favoriete kappper
+        </p>
+    </div>
+    <div class="col-md-12 jumbotron alert-info">
+        <h1>Start nu</h1>
+        <button class="btn btn-primary"
+                onclick="window.location='LoginPagina.php'" id="login_btn">Login
+        </button>
+        <button class="btn btn-primary"
+                onclick="window.location= 'RegistreerPagina.php'" id="register_btn">Registratie
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
