@@ -1,30 +1,40 @@
-.panel-title > a:hover, a:focus{
-    text-decoration: none;
+:root {
+    --logos-index-size: 32px;
 }
-.panel-default > .panel-heading:hover {
-    color: #333;
-    background-color: #d8d8d8;
-    border-color: #ddd;
+
+#client-logo {
+    width: var(--logos-index-size);
 }
-.iframe-container{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+
+#kapper-logo-span {
+    font-size: var(--logos-index-size);
+    margin-top: 10px;
 }
-.iframe-container > *{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+
+#card-stampCard .stampPlace {    
+    height: 50px;
 }
-.img-borden{
-    margin: 0 auto;
-    width: 100px;
-    height: 120px;
+#card-stampCard .stampPlace .fas, .far {
+    font-size: 200%;
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    #loginForm {
+        border-left:1px solid #ccc;
+        height:160px
+    }
+
+    #social-logins .row {
+        float: right;
+    }
+}
+
+@media (max-width: 768px) {
+    #social-logins .row {
+        justify-content: center;
+    }
+    .social-loggin-button {
+        text-align: center;
+    }
 }

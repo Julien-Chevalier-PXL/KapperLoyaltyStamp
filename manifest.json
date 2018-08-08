@@ -1,14 +1,14 @@
 {
-  "name":"Theoretische rijexamen",
-  "short_name":"Rijbewijs",
-  "display": "standalone",
-  "description": "Slaag van de 1ste X op je theoretische rijexamen.",
-  "icons":[
-  {
-    "src": "afb/icon.jpg",
-    "type":"image/jpg",
-    "size":"128x128"
+    "name":"Kapper Loyalty Stamp",
+    "short_name":"KapperLoyalty",
+    "display": "standalone",
+    "description": "Get a free haircut after 10 stamps !",
+    "icons":[
+    {
+      "src": "Images/client-barber-shop-48.png",
+      "type":"image/png",
+      "size":"48x48"
+    }
+  ],
+    "start_url":"index.html"
   }
-],
-  "start_url":"index.html?launvher=true"
-}
